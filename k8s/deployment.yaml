@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kpi-alert-api
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: kpi-alert-api
+  template:
+    metadata:
+      labels:
+        app: kpi-alert-api
+    spec:
+      containers:
+        - name: api
+          image: ghcr.io/jithendranara/kpi-alert-api:latest
+          ports:
+            - containerPort: 8080
+          env:
+            - name: LAKEHOUSE_EXPORT_DIR
+              value: /app/demo_exports
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 15
+            periodSeconds: 20

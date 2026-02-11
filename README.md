@@ -68,3 +68,19 @@ GitHub Actions runs tests on push/PR:
 
 ## Stack Coverage Extension
 - Planned gap-coverage work is tracked in `STACK_COVERAGE_PLAN.md`.
+
+## Container Runtime
+```bash
+# Build + run with Docker
+ docker build -t kpi-alert-api:local .
+ docker run -p 8080:8080 kpi-alert-api:local
+```
+
+```bash
+# Compose with lakehouse exports mounted
+ docker compose up --build
+```
+
+## Kubernetes
+- Deployment manifest: `k8s/deployment.yaml`
+- Service manifest: `k8s/service.yaml`
