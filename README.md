@@ -2,6 +2,11 @@
 
 Backend service exposing analytics and operational APIs for `signal-web` and `signal-copilot`.
 
+## Role Positioning
+- Primary fit: Software Engineer, Backend Engineer, Full-Stack Engineer
+- Showcase focus: API design, service layering, alerting logic, test coverage
+- Resume mapping: see `PROOF.md` and `RESUME_BULLETS.md`
+
 ## Endpoints
 - `GET /health`
 - `GET /v1/kpis/overview`
