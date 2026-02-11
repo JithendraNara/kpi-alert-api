@@ -15,7 +15,7 @@ router = APIRouter()
 
 @router.get("/health", response_model=HealthResponse)
 def health() -> HealthResponse:
-    return HealthResponse(status="ok", service="signal-services")
+    return HealthResponse(status="ok", service="kpi-alert-api")
 
 
 @router.get("/v1/kpis/overview", response_model=KPIOverviewResponse)

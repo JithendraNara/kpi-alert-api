@@ -4,7 +4,7 @@ import os
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parents[2]
-DEFAULT_EXPORT_DIR = BASE_DIR.parent / "signal-lakehouse" / "data" / "exports"
+DEFAULT_EXPORT_DIR = BASE_DIR.parent / "lakehouse-analytics-platform" / "data" / "exports"
 
 
 def get_export_dir() -> Path:
