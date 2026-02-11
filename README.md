@@ -27,3 +27,9 @@ pytest -q
 ```
 
 Set `LAKEHOUSE_EXPORT_DIR` if your lakehouse exports are in a different path.
+
+## Development Trail
+- Roadmap: `ROADMAP.md`
+- Changelog: `CHANGELOG.md`
+- Proof mapping: `PROOF.md`
+- Resume bullets: `RESUME_BULLETS.md`
