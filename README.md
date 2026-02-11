@@ -84,3 +84,11 @@ GitHub Actions runs tests on push/PR:
 ## Kubernetes
 - Deployment manifest: `k8s/deployment.yaml`
 - Service manifest: `k8s/service.yaml`
+
+## Java Mirror Service
+- Spring Boot parity API: `java-service/`
+- Endpoints: `GET /health`, `GET /v1/kpis/overview`
+
+## Runtime Notes
+- AWS runtime pattern: `docs/runtime/aws.md`
+- Azure runtime pattern: `docs/runtime/azure.md`
