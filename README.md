@@ -1,6 +1,6 @@
-# signal-services
+# kpi-alert-api
 
-Backend service exposing analytics and operational APIs for `signal-web` and `signal-copilot`.
+Backend service exposing analytics and operational APIs for `product-analytics-dashboard` and `analytics-copilot-rag`.
 
 ## Role Positioning
 - Primary fit: Software Engineer, Backend Engineer, Full-Stack Engineer
@@ -15,7 +15,7 @@ Backend service exposing analytics and operational APIs for `signal-web` and `si
 
 ## Stack
 - Python FastAPI
-- Pandas-backed reads from `signal-lakehouse/data/exports`
+- Pandas-backed reads from `lakehouse-analytics-platform/data/exports`
 
 ## Quick Start
 ```bash

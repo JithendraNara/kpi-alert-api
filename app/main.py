@@ -4,5 +4,5 @@ from fastapi import FastAPI
 
 from app.api.routes import router
 
-app = FastAPI(title="signal-services", version="0.1.0")
+app = FastAPI(title="kpi-alert-api", version="0.1.0")
 app.include_router(router)
